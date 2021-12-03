@@ -63,7 +63,10 @@ body {
 .weather-status {
     padding: 20px;
 }
-
+.nav_item{
+  text-decoration: none;
+  font-weight: bold;
+}
 .temp {
     font-size: 50pt;
     font-weight: 700;
@@ -102,7 +105,7 @@ a {
 
 .main-nav {
 	margin-top: 5px;
-
+  text-decoration: none;
 }
 .logo a,
 .main-nav a {
@@ -190,16 +193,17 @@ a {
 }
 .container1{
   background-color: black;
-  margin-top: 30px;
   text-align: center;
-  margin-left: 700px;
+  margin-left: 600px;
   border-style: solid;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   color: greenyellow;
 }
 .image{
     position: absolute;
+    width: "100%";
+     height: "100%";
 }
 .st{
     float: left;
@@ -215,15 +219,18 @@ a {
     margin-left: 150px;
     margin-right: 150px;
 }
-
+.form1{
+  float: left;
+}
 .button38 {
-  background: grey;
+  background: none;
   border-radius: 6px;
   display: inline-block;
   padding: 10px;
   text-align: center;
   max-width: 470px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .button38 figure {
@@ -235,9 +242,9 @@ a {
 .button38 .text {
   font-weight: bold;
   text-transform: uppercase;
-  color: #1d368a;
+  color: skyblue;
   margin: 0 0 15px;
-  font-size: 16px;
+  font-size: 20px;
 }
 input {
     font-family: 'Helvetica', serif;
@@ -251,14 +258,12 @@ input {
 .row_float{
     float: left;
 }
-
   .btn {
     box-sizing: border-box;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
     background-color: transparent;
-    border: 2px solid #e74c3c;
     border-radius: 0.6em;
     color: #e74c3c;
     cursor: pointer;
@@ -307,23 +312,18 @@ input {
   .second:hover {
     background-position: 100px;
   }
-  
+  .third1 {
+    border-color: black;
+    color: #fff;
+  }
   .third {
-    border-color: #3498db;
     color: #fff;
-    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
   }
-  .third:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-  }
-  
   .fourth {
-    border-color: #f1c40f;
+    border-color: skyblue;
     color: #fff;
-    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
-    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-image: -webkit-linear-gradient(45deg, skyblue 50%, transparent 50%);
+    background-image: linear-gradient(45deg, skyblue 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
