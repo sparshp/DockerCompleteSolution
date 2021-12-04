@@ -1,6 +1,6 @@
 import subprocess
 
-def img_serv(subser,mydata):
+def net_serv(subser,mydata):
     if subser == "ls":
         print(subprocess.getoutput("sudo docker network ls"))
         
