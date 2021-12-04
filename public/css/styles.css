@@ -194,10 +194,10 @@ a {
 .container1{
   background-color: black;
   text-align: center;
-  margin-left: 600px;
+  margin-left: 40%;
   border-style: solid;
-  width: 500px;
-  height: 500px;
+  width: 60%;
+  height: 80rem;
   color: greenyellow;
 }
 .image{
@@ -290,7 +290,13 @@ input {
     outline: 0;
   }
   
+  .white
+  {
+    color: white;
+  }
   .first {
+     color: white;
+     border-color: #fff;
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   }
@@ -328,6 +334,11 @@ input {
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
     transition: background 300ms ease-in-out;
+  }
+
+  .bold_btn
+  {
+    font-weight: 10rem;
   }
   .fourth:hover {
     background-position: 0;
