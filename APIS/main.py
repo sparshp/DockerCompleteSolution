@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#ssh -i "keyboard_shift.pem" ubuntu@ec2-13-233-45-0.ap-south-1.compute.amazonaws.com
 
 import cgi
 import img

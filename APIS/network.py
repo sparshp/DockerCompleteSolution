@@ -20,4 +20,4 @@ def net_serv(subser,mydata):
     
     elif subser == "cap_ip":
         cont_name = mydata.getvalue("cont_name")
-        print(subprocess.getoutput("docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"+cont_name))
+        print(subprocess.getoutput("docker inspect -f"+"'{{"+"range.NetworkSettings.Networks"+"}}{{"+".IPAddress}}{{end"+"'}}' "+cont_name))
