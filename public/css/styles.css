@@ -106,6 +106,7 @@ a {
 .main-nav {
 	margin-top: 5px;
   text-decoration: none;
+
 }
 .logo a,
 .main-nav a {
@@ -326,10 +327,10 @@ input {
     color: #fff;
   }
   .fourth {
-    border-color: skyblue;
+    border-color: rgba(255, 0, 0, 0.300);
     color: #fff;
-    background-image: -webkit-linear-gradient(45deg, skyblue 50%, transparent 50%);
-    background-image: linear-gradient(45deg, skyblue 50%, transparent 50%);
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 0, 0, 0.350) 50%, transparent 50%);
+    background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.350) 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
@@ -392,3 +393,66 @@ input {
     background-position: 0 100%;
   }
   
+  .img_back
+  {
+    background-image: url(/images/serverless.png);
+    background-color: rgba(221, 15, 15, 0.349);
+    width: 40rem;
+    height: 25rem;
+    
+  }
+
+  .text_pos
+  {
+    padding-top: 55%;
+    text-align: center;
+    color:white;
+    font-weight: 800;
+  }
+
+  .container2 {
+    position: relative;
+    color: white;
+    float: left;
+  }
+  
+  
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .centered1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .centered2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .centered3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .machinIp
+  {
+    border:solid;
+    border-radius: 25%;
+    border-color: rgba(255, 0, 0, 0.404);
+    background-color: rgba(255, 0, 0, 0.363);
+  }
+
+  .machinIp_txt
+  {
+    text-align: right;
+    padding-right: 5%;
+  }

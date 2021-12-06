@@ -1,6 +1,6 @@
 import subprocess
 
-def img_serv(subser,mydata):
+def net_serv(subser,mydata):
     if subser == "ls":
         print(subprocess.getoutput("sudo docker network ls"))
         
@@ -20,4 +20,4 @@ def img_serv(subser,mydata):
     
     elif subser == "cap_ip":
         cont_name = mydata.getvalue("cont_name")
-        print(subprocess.getoutput("docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"+cont_name))
+        print(subprocess.getoutput("docker inspect -f"+"'{{"+"range.NetworkSettings.Networks"+"}}{{"+".IPAddress}}{{end"+"'}}' "+cont_name))
