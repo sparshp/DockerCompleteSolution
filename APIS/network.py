@@ -7,6 +7,7 @@ def net_serv(subser,mydata):
     elif subser =="create":
         subnet = mydata.getvalue("subnet")
         net_name = mydata.getvalue("net_name")
+        print("Network Created Of this IP 👉")
         print(subprocess.getoutput("sudo docker network create --subnet="+subnet+" "+net_name))
     
     elif subser == "deploy_with_static":
@@ -20,4 +21,5 @@ def net_serv(subser,mydata):
     
     elif subser == "cap_ip":
         cont_name = mydata.getvalue("cont_name")
+        print("IP of "+cont_name+" continer is 👉")
         print(subprocess.getoutput("docker inspect -f"+"'{{"+"range.NetworkSettings.Networks"+"}}{{"+".IPAddress}}{{end"+"'}}' "+cont_name))
