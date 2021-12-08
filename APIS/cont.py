@@ -22,11 +22,13 @@ def cont_serv(subser,mydata):
     elif subser == "stop":
         cont_name = mydata.getvalue("cont_name")
         print(subprocess.getoutput("sudo docker container stop "+cont_name))
+        print(cont_name+" container is stopped.")
     
     elif subser == "start":
         cont_name = mydata.getvalue("cont_name")
         print(subprocess.getoutput("sudo docker container start "+cont_name))
-    
+        print(cont_name+" container is started.")
+        
     elif subser == "log":
         cont_name = mydata.getvalue("cont_name")
         print(subprocess.getoutput("sudo docker container logs --tail 100 "+cont_name))          
